@@ -14,8 +14,14 @@ Template: base-wp
 HEADER STYLES
 ******************************/
 .site-header{
-	background-image: url("images/header_corte.jpg");
-	background-repeat: repeat-x;
+	background-image: url("images/header_textura.png");
+	background-repeat: repeat;
+}
+
+.header-linha-verde{
+	width:100%;
+	height:10px;
+	background-color: green;
 }
 
 .logo-organicos{
@@ -47,13 +53,96 @@ HEADER STYLES
 
 .redes-sociais-header{
 	float:left;
-	width:200px;
+	width:170px;
 	height:50px;
-	background-image: url("images/redes_sociais.png");
-	background-repeat: no-repeat;
+	list-style:none;
+	margin:0;
 }
 
+.redes-sociais-header a{
+	width: 100%;
+	height: 100%;
+	display:inline-block;
+}
+
+.redes-sociais-header .twitter{
+	background-image: url("images/redes_sociais.png");
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	display:inline-block;
+}
+
+.redes-sociais-header .instagran{
+	background-image: url("images/redes_sociais.png");
+	background-position: center,center;
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	display:inline-block;
+}
+
+.redes-sociais-header .facebook{
+	background-image: url("images/redes_sociais.png");
+	background-position: right,center;
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	display:inline-block;
+}
+
+/*****************************
+MENU STYLES
+******************************/
+
+.menu-item{
+	width: 24%;
+}
+
+/*****************************
+POSTS STYLES
+******************************/
+
+.entry-header{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.entry-meta{
+	float:left;
+	width:20%;
+	border:0;
+	margin:0;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+.thumb-header{
+	float:left;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+	
+}
+
+.thumb-header img:hover{
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+	
+}
+
+.attachment-post-thumbnail{
+	margin: 0;
+}       
+
 @media only screen and (max-width: 767px) {
+
+	/*****************************
+	HEADER STYLES
+	******************************/	
 
 	.pesquisar-redes{
 		width: 250px;
@@ -78,16 +167,35 @@ HEADER STYLES
 	.pesquisar-organicos .pesquisar-submit{
 		float:left;
 	}
-
-	.redes-sociais-header{
+	
+	/*****************************
+	POSTS STYLES
+	******************************/	
+	
+	.entry-meta{
 		float:left;
-		width:200px;
-		height:50px;
-		background-image: url("images/redes_sociais.png");
-		background-repeat: no-repeat;
+		width:20%;
+		border:0;
+		margin:0;
+		padding-top:100px;
+		padding-bottom:100px;
 	}
 
+	.thumb-header{
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 80%;
+	}
+
+}
 @media only screen and (max-width: 479px) {
+
+	/*****************************
+	HEADER STYLES
+	******************************/
+
 	.logo-organicos{
 		float: none;
 		margin: 0 auto;
@@ -116,14 +224,28 @@ HEADER STYLES
 		float:left;
 	}
 
-	.redes-sociais-header{
-		float:none;
-		width:200px;
-		height:50px;
-		background-image: url("images/redes_sociais.png");
-		background-repeat: no-repeat;
+	/*****************************
+	POSTS STYLES
+	******************************/	
+	
+	.entry-meta{
+		float:left;
+		width:20%;
+		border:0;
+		margin:0;
+		padding-top:50px;
+		padding-bottom:50px;
 	}
+
+	.thumb-header{
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 80%;
+	}
+	
 }
 
-}
+
 

@@ -19,8 +19,9 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
-
+	<div class="header-linha-verde"></div>
 	<header id="masthead" class="site-header" role="banner">
+		
 		<div class="site-branding">
         
         <?php if ( get_header_image() ) : ?>
@@ -37,21 +38,27 @@
 				<div class="pesquisar-organicos">
 					<?php get_search_form(); ?>
 				</div>
-				<div class="redes-sociais-header">
-				</div>
+				<ul class="redes-sociais-header">
+					<li class="twitter"><a target="_blank" href="https://twitter.com/organicoemcasa"></a></li>
+					<li class="instagran"><a target="_blank" href="https://instagram.com/organicosnaporta"></a></li>
+					<li class="facebook"><a target="_blank" href="https://www.facebook.com/organicosnaporta"></a></li>
+				</ul>
 			</div>
         </div><!-- .container branding-->
         </div><!-- .site-branding-->
        
 	</header><!-- #masthead -->
-	<div class=" container navmenu">
-	<nav id="site-navigation" class="main-navigation" role="navigation">
-		<h1 class="menu-toggle"><?php _e( 'Menu', 'base' ); ?></h1>
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'base' ); ?></a>
-		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-	</nav><!-- #site-navigation -->
-
-	</div> <!-- .container navmenu-->
-	 <!--<div class="wide contenitor">-->
 <div id="content" class="site-content container">
-	<?php kw_sc_logo_carousel('logo_princ'); ?>
+	<?php 
+	if (is_home()):
+		kw_sc_logo_carousel('logo_princ'); 
+	?>
+		<div class=" container navmenu">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<h1 class="menu-toggle"><?php _e( 'Menu', 'base' ); ?></h1>
+				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'base' ); ?></a>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav><!-- #site-navigation -->
+		</div> <!-- .container navmenu-->
+		 <!--<div class="wide contenitor">-->
+	 <?php endif ?>

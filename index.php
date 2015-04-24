@@ -12,7 +12,6 @@
  */
 
 get_header(); 
-kw_sc_logo_carousel('teste');
 ?>
 
 	<div id="primary" class="content-area twelve columns">
