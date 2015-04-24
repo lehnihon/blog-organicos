@@ -28,15 +28,30 @@
 		<?php endif; // End header image check. ?>
         
         <div class="container branding">
-		<?php if ( of_get_option('logo_uploader') ) : ?>
-       		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> 		
-            <img src="<?php echo of_get_option('logo_uploader'); ?>" alt="<?php echo esc_attr( bloginfo( 'name' )); ?>"></a></h1>
-		<?php else : ?>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		<?php endif; ?>
+			<div class="logo-organicos">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> 		
+					<img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo.png"; ?>" alt="<?php echo esc_attr( bloginfo( 'name' )); ?>">	
+				</a>
+			</div>
+			<div class="pesquisar-redes">
+				<div class="pesquisar-organicos">
+					<?php get_search_form(); ?>
+				</div>
+				<div class="redes-sociais-header">
+				</div>
+			</div>
         </div><!-- .container branding-->
         </div><!-- .site-branding-->
+       
 	</header><!-- #masthead -->
-	<div class="wide contenitor">
+	<div class=" container navmenu">
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+		<h1 class="menu-toggle"><?php _e( 'Menu', 'base' ); ?></h1>
+		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'base' ); ?></a>
+		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+	</nav><!-- #site-navigation -->
+
+	</div> <!-- .container navmenu-->
+	 <!--<div class="wide contenitor">-->
 <div id="content" class="site-content container">
+	<?php kw_sc_logo_carousel('logo_princ'); ?>

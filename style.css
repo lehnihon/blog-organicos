@@ -6,4 +6,124 @@ Version: 1.0
 Template: base-wp
 */
 
+
 @import url("../base-wp/style.css");
+
+
+/*****************************
+HEADER STYLES
+******************************/
+.site-header{
+	background-image: url("images/header_corte.jpg");
+	background-repeat: repeat-x;
+}
+
+.logo-organicos{
+	float: left;
+	padding-top:1.5em;
+}
+
+.pesquisar-redes{
+	float: right;
+	margin-top:50px;
+}
+
+.pesquisar-organicos{
+	float: left;
+	width: 380px;
+	height:50px;
+}
+
+.pesquisar-organicos .pesquisar-input{
+	float:left;
+	width: 300px;
+	margin:0;
+	padding:0;
+	height:50px;
+}
+.pesquisar-organicos .pesquisar-submit{
+	float:left;
+}
+
+.redes-sociais-header{
+	float:left;
+	width:200px;
+	height:50px;
+	background-image: url("images/redes_sociais.png");
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 767px) {
+
+	.pesquisar-redes{
+		width: 250px;
+		float: right;
+		margin-top:25px;
+	}
+
+	.pesquisar-organicos{
+		float: left;
+		width: 250px;
+		height:50px;
+		margin-bottom:5px;
+	}
+
+	.pesquisar-organicos .pesquisar-input{
+		float:left;
+		width: 170px;
+		margin:0;
+		padding:0;
+		height:50px;
+	}
+	.pesquisar-organicos .pesquisar-submit{
+		float:left;
+	}
+
+	.redes-sociais-header{
+		float:left;
+		width:200px;
+		height:50px;
+		background-image: url("images/redes_sociais.png");
+		background-repeat: no-repeat;
+	}
+
+@media only screen and (max-width: 479px) {
+	.logo-organicos{
+		float: none;
+		margin: 0 auto;
+	}
+	
+	.pesquisar-redes{
+		margin: 0 auto;
+		float:none;
+		width: 200px;
+	}
+
+	.pesquisar-organicos{
+		float:none;
+		width: 200px;
+		height:50px;
+	}
+
+	.pesquisar-organicos .pesquisar-input{
+		float:left;
+		width: 120px;
+		margin:0;
+		padding:0;
+		height:50px;
+	}
+	.pesquisar-organicos .pesquisar-submit{
+		float:left;
+	}
+
+	.redes-sociais-header{
+		float:none;
+		width:200px;
+		height:50px;
+		background-image: url("images/redes_sociais.png");
+		background-repeat: no-repeat;
+	}
+}
+
+}
+
