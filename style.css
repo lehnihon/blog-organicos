@@ -54,6 +54,7 @@ HEADER STYLES
 }
 
 @media only screen and (max-width: 767px) {
+
 	.pesquisar-redes{
 		width: 250px;
 		float: right;

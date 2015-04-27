@@ -44,12 +44,14 @@
         </div><!-- .site-branding-->
        
 	</header><!-- #masthead -->
-	<div class="wide contenitor">
-      <div class=" container navmenu">
-        <nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'base' ); ?></h1>
-			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'base' ); ?></a>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
-      </div> <!-- .container navmenu-->
+	<div class=" container navmenu">
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+		<h1 class="menu-toggle"><?php _e( 'Menu', 'base' ); ?></h1>
+		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'base' ); ?></a>
+		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+	</nav><!-- #site-navigation -->
+
+	</div> <!-- .container navmenu-->
+	 <!--<div class="wide contenitor">-->
 <div id="content" class="site-content container">
+	<?php kw_sc_logo_carousel('logo_princ'); ?>
