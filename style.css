@@ -13,9 +13,19 @@ Template: base-wp
 /*****************************
 HEADER STYLES
 ******************************/
+
+.site-content{
+	padding-top:0 !important;
+}
+
 .site-header{
 	background-image: url("images/header_textura.png");
 	background-repeat: repeat;
+}
+
+.header-image:hover{
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
 .header-linha-verde{
@@ -26,7 +36,9 @@ HEADER STYLES
 
 .logo-organicos{
 	float: left;
+	margin-left:20px;
 	padding-top:1.5em;
+	padding-bottom:1.5em;
 }
 
 .pesquisar-redes{
@@ -42,14 +54,22 @@ HEADER STYLES
 
 .pesquisar-organicos .pesquisar-input{
 	float:left;
-	width: 300px;
+	width: 290px;
 	margin:0;
-	padding:0;
-	height:50px;
+	padding-left:10px;
+	height:40px;
 }
 .pesquisar-organicos .pesquisar-submit{
 	float:left;
+	width:68px;
+	height:50px;
 }
+
+.pesquisar-organicos .pesquisar-submit:hover{
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
 
 .redes-sociais-header{
 	float:left;
@@ -73,6 +93,12 @@ HEADER STYLES
 	display:inline-block;
 }
 
+.redes-sociais-header .twitter:hover{
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+
 .redes-sociais-header .instagran{
 	background-image: url("images/redes_sociais.png");
 	background-position: center,center;
@@ -80,6 +106,11 @@ HEADER STYLES
 	width:50px;
 	height:50px;
 	display:inline-block;
+}
+
+.redes-sociais-header .instagran:hover{
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
 .redes-sociais-header .facebook{
@@ -91,12 +122,25 @@ HEADER STYLES
 	display:inline-block;
 }
 
+.redes-sociais-header .facebook:hover{
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
 /*****************************
 MENU STYLES
 ******************************/
 
+.main-navigation{
+}
+
 .menu-item{
-	width: 24%;
+	float:left;
+	width: 25%;
+}
+
+.bx-wrapper{
+	margin-bottom:0;
 }
 
 /*****************************
@@ -131,7 +175,6 @@ POSTS STYLES
 .thumb-header img:hover{
 	-webkit-filter: grayscale(100%); 
 	filter: grayscale(100%);
-	
 }
 
 .attachment-post-thumbnail{
@@ -166,6 +209,18 @@ POSTS STYLES
 	}
 	.pesquisar-organicos .pesquisar-submit{
 		float:left;
+	}
+	
+	/*****************************
+	MENU STYLES
+	******************************/
+
+	.menu-item{
+		width: 100%;	
+	}
+
+	.bx-wrapper{
+		display:none;
 	}
 	
 	/*****************************
@@ -224,6 +279,22 @@ POSTS STYLES
 		float:left;
 	}
 
+
+	
+	/*****************************
+	MENU STYLES
+	******************************/
+
+
+	.menu-item{
+		width: 100%;	
+	}
+
+	.bx-wrapper{
+		display:none;
+	}
+	
+	
 	/*****************************
 	POSTS STYLES
 	******************************/	
