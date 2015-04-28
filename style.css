@@ -39,6 +39,7 @@ HEADER STYLES
 	margin-left:20px;
 	padding-top:1.5em;
 	padding-bottom:1.5em;
+	padding-right:1.5em;
 }
 
 .pesquisar-redes{
@@ -188,21 +189,21 @@ POSTS STYLES
 	******************************/	
 
 	.pesquisar-redes{
-		width: 250px;
+		width: 230px;
 		float: right;
 		margin-top:25px;
 	}
 
 	.pesquisar-organicos{
 		float: left;
-		width: 250px;
+		width: 230px;
 		height:50px;
 		margin-bottom:5px;
 	}
 
 	.pesquisar-organicos .pesquisar-input{
 		float:left;
-		width: 170px;
+		width: 150px;
 		margin:0;
 		padding:0;
 		height:50px;
