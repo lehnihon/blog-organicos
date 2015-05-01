@@ -1,7 +1,7 @@
 /*
 Theme Name: Organicos Blog
 Author: Leandro Kenji Ishikawa
-Description: Tema para o blog orgânicos na porta
+Description: Tema para o blog orgânicos na porta, (meta slider, ninja forms)
 Version: 1.0
 Template: base-wp
 */
@@ -137,12 +137,9 @@ MENU STYLES
 
 .menu-item{
 	float:left;
-	width: 25%;
+	width: 23.95%;
 }
 
-.bx-wrapper{
-	margin-bottom:0;
-}
 
 /*****************************
 POSTS STYLES
@@ -220,10 +217,6 @@ POSTS STYLES
 		width: 100%;	
 	}
 
-	.bx-wrapper{
-		display:none;
-	}
-	
 	/*****************************
 	POSTS STYLES
 	******************************/	
@@ -292,9 +285,6 @@ POSTS STYLES
 		width: 100%;	
 	}
 
-	.bx-wrapper{
-		display:none;
-	}
 	
 	
 	/*****************************

@@ -46,7 +46,7 @@
 <div id="content" class="site-content container">
 	<?php if (is_home()):?>
 		<div class=" container navmenu">
-			<?php kw_sc_logo_carousel('logo_princ'); ?>
+			<?php echo do_shortcode("[metaslider id=55]"); ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<h1 class="menu-toggle"><?php _e( 'Menu', 'base' ); ?></h1>
 				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'base' ); ?></a>
