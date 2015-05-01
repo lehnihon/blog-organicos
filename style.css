@@ -1,7 +1,7 @@
 /*
 Theme Name: Organicos Blog
 Author: Leandro Kenji Ishikawa
-Description: Tema para o blog orgânicos na porta, (meta slider, ninja forms)
+Description: Tema para o blog orgânicos na porta
 Version: 1.0
 Template: base-wp
 */
@@ -13,6 +13,10 @@ Template: base-wp
 /*****************************
 HEADER STYLES
 ******************************/
+
+#page{
+	background-color:white;
+}
 
 .site-content{
 	padding-top:0 !important;
@@ -132,18 +136,113 @@ HEADER STYLES
 MENU STYLES
 ******************************/
 
-.main-navigation{
+.navmenu{
+	padding-bottom:40px !important;
+}
+
+.navmenub{
+	position:relative;
+	list-style:none;
+	float:right;
+	margin:15px 10px;
+}
+
+.navmenub li{
+	float:left;
+}
+
+.navmenuc{
+	display:none;
+}
+
+.navmenu-ponto{
+	background-image: url("images/elipse.png");
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:16px;
+	height:25px;
 }
 
 .menu-item{
 	float:left;
-	width: 23.95%;
+	width: 25%; 
 }
 
+.menu-item:hover{
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#menu-item-43{
+	background-color:#57a531;
+}
+
+#menu-item-43 a:hover{
+	background-color:transparent;
+}
+
+#menu-item-43 a{
+	color:white;
+	padding:16px 0;
+}
+
+#menu-item-42{
+	background-color:#cfea1c;
+}
+
+#menu-item-42 a{
+	color:white;
+	padding:16px 0;
+}
+#menu-item-42 a:hover{
+	background-color:transparent;
+}
+
+#menu-item-45{
+	background-color:#d5577c;
+}
+
+#menu-item-45 a{
+	color:white;
+	padding:16px 0;
+}
+
+#menu-item-45 a:hover{
+	background-color:transparent;
+}
+
+#menu-item-44{
+	background-color:#f4c639;
+}
+
+#menu-item-44 a{
+	color:white;
+	padding:16px 0;
+}
+
+#menu-item-44 a:hover{
+	background-color:transparent;
+}
 
 /*****************************
 POSTS STYLES
 ******************************/
+
+article{
+	border:0;
+	padding:0;
+	-webkit-box-shadow:0 0 0 white !important;
+	box-shadow:0 0 0 white !important;
+	-moz-box-shadow:0 0 0 white !important;
+}
+
+aside{
+	border:0 !important;
+	padding:0 !important;
+	-webkit-box-shadow:0 0 0 white !important;
+	-moz-box-shadow:0 0 0 white !important;
+	box-shadow:0 0 0 white !important;
+}
 
 .entry-header{
     overflow: hidden;
@@ -151,33 +250,77 @@ POSTS STYLES
     width: 100%;
 }
 
-.entry-meta{
-	float:left;
+.entry-meta-home{
+	float:right;
 	width:20%;
 	border:0;
 	margin:0;
-	padding-top:100px;
-	padding-bottom:100px;
+	padding:0;
+	position: absolute;
+	height: 100%;
 }
 
-.thumb-header{
-	float:left;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 80%;
-	
+.entry-meta-content{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	text-align:center;
+	font-weight:bold;
+	color:white;
 }
 
-.thumb-header img:hover{
+.entry-meta-content .mes{
+	font-size:18px;
+	display:block;
+}
+
+.entry-meta-content .dia{
+	font-size:40px;
+	display:block;
+}
+
+.attachment-post-thumbnail:hover{
 	-webkit-filter: grayscale(100%); 
 	filter: grayscale(100%);
 }
 
 .attachment-post-thumbnail{
 	margin: 0;
+	float:right;
+    top: 0;
+    right: 0;
+    width: 80%;
 }       
+
+.entry-footer ul{
+	margin:0;
+}
+
+.entry-footer ul li{
+	list-style:none;
+	float:left;
+	margin:0 3px;
+}
+
+.entry-footer ul li img:hover{
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+/*****************************
+FOOTER STYLES
+******************************/	
+
+.site-footer{
+	-webkit-box-shadow: 0px -3px 3px 0px #ddd;
+	-moz-box-shadow:    0px -3px 3px 0px #ddd;
+	box-shadow:         0px -3px 3px 0px #ddd;
+	border:0;
+	
+	background-image: url("images/header_textura.png");
+	background-repeat: repeat;
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -216,27 +359,39 @@ POSTS STYLES
 	.menu-item{
 		width: 100%;	
 	}
-
+	
+	.navmenub{
+		display:none;
+	}
+	
+	.navmenuc{
+		display:block;
+		list-style:none;
+		margin:15px 10px;
+	}
+	
 	/*****************************
 	POSTS STYLES
-	******************************/	
+	******************************/
+
+	.entry-meta-content{
+		position: relative;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		text-align:center;
+		font-weight:bold;
+		
+	}	
 	
-	.entry-meta{
-		float:left;
-		width:20%;
-		border:0;
-		margin:0;
-		padding-top:100px;
-		padding-bottom:100px;
+	.entry-meta-content .mes{
+		font-size:12px;
 	}
 
-	.thumb-header{
-		height: 100%;
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 80%;
+	.entry-meta-content .dia{
+		font-size:24px;
 	}
+	
 
 }
 @media only screen and (max-width: 479px) {
@@ -284,28 +439,27 @@ POSTS STYLES
 	.menu-item{
 		width: 100%;	
 	}
-
-	
 	
 	/*****************************
 	POSTS STYLES
-	******************************/	
+	******************************/
+
+	.entry-meta-content{
+		position: relative;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		text-align:center;
+		font-weight:bold;
+		
+	}	
 	
-	.entry-meta{
-		float:left;
-		width:20%;
-		border:0;
-		margin:0;
-		padding-top:50px;
-		padding-bottom:50px;
+	.entry-meta-content .mes{
+		font-size:9px;
 	}
 
-	.thumb-header{
-		height: 100%;
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 80%;
+	.entry-meta-content .dia{
+		font-size:18px;
 	}
 	
 }
