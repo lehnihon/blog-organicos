@@ -6,19 +6,20 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+		<?php if ( has_post_thumbnail()) : ?>
+				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+			<?php the_post_thumbnail(); ?></a>
+		<?php endif; ?>
 		<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta" style="<?php echo post_background_color(the_category_ID( FALSE)) ?>">
+				<p style="margin-top:40%; text-align:center">
 				<?php 
 					echo post_date_format(get_the_date('d-F'));
 				?>
+				</p>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
-		<div class="thumb-header">
-			<?php if ( has_post_thumbnail()) : ?>
-					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-				<?php the_post_thumbnail(); ?></a>
-			<?php endif; ?>
-		</div>
+		<div style="clear:both"></div>
     </header><!-- .entry-header -->
 	<div class="entry-content">
 		<h1 class="entry-title">

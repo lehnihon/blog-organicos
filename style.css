@@ -155,21 +155,17 @@ POSTS STYLES
 }
 
 .entry-meta{
-	float:left;
+	float:right;
 	width:20%;
 	border:0;
 	margin:0;
-	padding-top:100px;
-	padding-bottom:100px;
+	padding:0;
+	position: absolute;
+	height: 100%;
 }
 
 .thumb-header{
-	float:left;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 80%;
+
 	
 }
 
@@ -180,6 +176,10 @@ POSTS STYLES
 
 .attachment-post-thumbnail{
 	margin: 0;
+	float:right;
+    top: 0;
+    right: 0;
+    width: 80%;
 }       
 
 @media only screen and (max-width: 767px) {
@@ -224,26 +224,6 @@ POSTS STYLES
 		display:none;
 	}
 	
-	/*****************************
-	POSTS STYLES
-	******************************/	
-	
-	.entry-meta{
-		float:left;
-		width:20%;
-		border:0;
-		margin:0;
-		padding-top:100px;
-		padding-bottom:100px;
-	}
-
-	.thumb-header{
-		height: 100%;
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 80%;
-	}
 
 }
 @media only screen and (max-width: 479px) {
@@ -297,26 +277,6 @@ POSTS STYLES
 	}
 	
 	
-	/*****************************
-	POSTS STYLES
-	******************************/	
-	
-	.entry-meta{
-		float:left;
-		width:20%;
-		border:0;
-		margin:0;
-		padding-top:50px;
-		padding-bottom:50px;
-	}
-
-	.thumb-header{
-		height: 100%;
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 80%;
-	}
 	
 }
 
