@@ -11,8 +11,8 @@
 			<?php the_post_thumbnail(); ?></a>
 		<?php endif; ?>
 		<?php if ( 'post' == get_post_type() ) : ?>
-			<div class="entry-meta" style="<?php echo post_background_color(the_category_ID( FALSE)) ?>">
-				<p style="margin-top:40%; text-align:center">
+			<div class="entry-meta-home" style="<?php echo post_background_color(the_category_ID( FALSE)) ?>">
+				<p class="entry-meta-content">
 				<?php 
 					echo post_date_format(get_the_date('d-F'));
 				?>
@@ -23,7 +23,7 @@
     </header><!-- .entry-header -->
 	<div class="entry-content">
 		<h1 class="entry-title">
-        	<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+        	<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?>
         </h1>            
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'base' ) ); ?>
 		<?php
@@ -35,32 +35,13 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'base' ) );
-				if ( $categories_list && base_categorized_blog() ) :
-			?>
-			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'base' ), $categories_list ); ?>
-			</span>
-			<?php endif; // End if categories ?>
-
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'base' ) );
-				if ( $tags_list ) :
-			?>
-			<span class="tags-links">
-				<?php printf( __( 'Tagged %1$s', 'base' ), $tags_list ); ?>
-			</span>
-			<?php endif; // End if $tags_list ?>
-		<?php endif; // End if 'post' == get_post_type() ?>
-
-		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'base' ), __( '1 Comment', 'base' ), __( '% Comments', 'base' ) ); ?></span>
-		<?php endif; ?>
-
-		<?php edit_post_link( __( 'Edit', 'base' ), '<span class="edit-link">', '</span>' ); ?>
+		<ul>
+			<li><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/plus.jpg"; ?>"/></li>
+			<li><a href="<?php the_permalink(); ?>" rel="bookmark">Veja o post completo.</a></li>
+		</ul>
+		<div style="clear:both"></div>
+		<p>
+			<?php edit_post_link( __( 'Editar post', 'base' ), '<span class="edit-link">', '</span>' ); ?>
+		</p>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

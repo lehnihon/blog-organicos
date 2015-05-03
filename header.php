@@ -17,6 +17,15 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<div class="header-linha-verde"></div>
@@ -45,13 +54,33 @@
 	</header><!-- #masthead -->
 <div id="content" class="site-content container">
 	<?php if (is_home()):?>
-		<div class=" container navmenu">
-			<?php kw_sc_logo_carousel('logo_princ'); ?>
+		<div class="container navmenu">
+			<ul class="navmenub">
+				<li><a target="_blank" href="#">SOBRE O BLOG</a></li>
+				<li class="navmenu-ponto"></li>
+				<li><a target="_blank" href="#">CONHEÇA NOSSA LOJA</a></li>
+				<li class="navmenu-ponto"></li>
+				<li><a target="_blank" href="#">RECEBA NOVIDADES</a></li>
+				<li class="navmenu-ponto"></li>
+				<li><a target="_blank" href="#">FALE CONOSCO</a></li>
+			</ul>
+			<ul class="navmenuc">
+				<li><a target="_blank" href="#">SOBRE O BLOG</a></li>
+				<li><a target="_blank" href="#">CONHEÇA NOSSA LOJA</a></li>
+				<li><a target="_blank" href="#">RECEBA NOVIDADES</a></li>
+				<li><a target="_blank" href="#">FALE CONOSCO</a></li>
+			</ul>
+			<div style="clear:both"></div>
+			<div style="padding:0 10px;">
+			<?php 
+				echo do_shortcode("[metaslider id=59]"); 
+			?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<h1 class="menu-toggle"><?php _e( 'Menu', 'base' ); ?></h1>
 				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'base' ); ?></a>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #site-navigation -->
+			</div>
 		</div> <!-- .container navmenu-->
 		 <!--<div class="wide contenitor">-->
 	 <?php endif ?>
