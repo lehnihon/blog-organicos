@@ -37,7 +37,7 @@
 	<footer class="entry-footer">
 		<ul>
 			<li><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/plus.jpg"; ?>"/></li>
-			<li><a href="<?php the_permalink(); ?>" rel="bookmark">Veja o post completo.</a></li>
+			<li><a href="<?php the_permalink(); ?>" rel="bookmark"><strong>Veja o post completo.</strong></a></li>
 		</ul>
 		<div style="clear:both"></div>
 		<p>

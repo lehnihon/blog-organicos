@@ -15,8 +15,16 @@ HEADER STYLES
 ******************************/
 
 html { font-size: 62.5%; } /* font-size: 62.5% now means that 1.0 rem = 10px */
-*{font-size: 1.6rem }
+*{font-size: 1.5rem }
 body { font-family: arial;  }
+
+.font-size-p{
+	font-size: 1.3rem
+}
+
+.font-size-g{
+	font-size: 1.7rem
+}
 
 #page{
 	background-color:white;
@@ -32,8 +40,8 @@ body { font-family: arial;  }
 }
 
 .header-image:hover{
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
 .header-linha-verde{
@@ -75,10 +83,9 @@ body { font-family: arial;  }
 }
 
 .pesquisar-organicos .pesquisar-submit:hover{
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
-
 
 .redes-sociais-header{
 	float:left;
@@ -103,8 +110,8 @@ body { font-family: arial;  }
 }
 
 .redes-sociais-header .twitter:hover{
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
 
@@ -118,8 +125,8 @@ body { font-family: arial;  }
 }
 
 .redes-sociais-header .instagran:hover{
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
 .redes-sociais-header .facebook{
@@ -132,8 +139,64 @@ body { font-family: arial;  }
 }
 
 .redes-sociais-header .facebook:hover{
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.redes-sociais-header-pb{
+	float:left;
+	width:170px;
+	height:50px;
+	list-style:none;
+	margin:0;
+}
+
+.redes-sociais-header-pb a{
+	width: 100%;
+	height: 100%;
+	display:inline-block;
+}
+
+.redes-sociais-header-pb .twitter{
+	background-image: url("images/redes_sociais_pb.png");
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	display:inline-block;
+}
+
+.redes-sociais-header-pb .twitter:hover{
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+
+.redes-sociais-header-pb .instagran{
+	background-image: url("images/redes_sociais_pb.png");
+	background-position: center,center;
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	display:inline-block;
+}
+
+.redes-sociais-header-pb .instagran:hover{
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.redes-sociais-header-pb .facebook{
+	background-image: url("images/redes_sociais_pb.png");
+	background-position: right,center;
+	background-repeat:no-repeat;
+	width:50px;
+	height:50px;
+	display:inline-block;
+}
+
+.redes-sociais-header-pb .facebook:hover{
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
 /*****************************
@@ -153,6 +216,7 @@ MENU STYLES
 
 .navmenub li{
 	float:left;
+	margin: 0 4px;
 }
 
 .navmenuc{
@@ -172,9 +236,13 @@ MENU STYLES
 	width: 25%; 
 }
 
+.menu-item a{
+	font-weight:bold;
+}
+
 .menu-item:hover{
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
 #menu-item-43{
@@ -275,13 +343,14 @@ aside{
 }
 
 .entry-meta-content .mes{
-	font-size:18px;
+	font-size:2rem;
 	display:block;
 }
 
 .entry-meta-content .dia{
-	font-size:40px;
+	font-size:6rem;
 	display:block;
+	line-height:1;
 }
 
 .attachment-post-thumbnail:hover{
@@ -308,8 +377,8 @@ aside{
 }
 
 .entry-footer ul li img:hover{
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
 /*****************************
