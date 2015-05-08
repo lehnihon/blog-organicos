@@ -14,6 +14,10 @@ Template: base-wp
 HEADER STYLES
 ******************************/
 
+html { font-size: 62.5%; } /* font-size: 62.5% now means that 1.0 rem = 10px */
+*{font-size: 1.6rem }
+body { font-family: arial;  }
+
 #page{
 	background-color:white;
 }
@@ -321,6 +325,35 @@ FOOTER STYLES
 	background-image: url("images/header_textura.png");
 	background-repeat: repeat;
 }
+
+.img-footer{
+	float:right;
+}
+
+.footer-contenta{
+	float:left;
+}
+
+.footer-contentb{
+	float:left;
+}
+
+.footer-contentc{
+	float:left;
+}
+
+.footer-contenta ul{
+	list-style:none;
+}
+
+.footer-contentb ul{
+	list-style:none;
+}
+
+.footer-contentc ul{
+	list-style:none;
+}
+
 
 @media only screen and (max-width: 767px) {
 
