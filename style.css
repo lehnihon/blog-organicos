@@ -322,6 +322,35 @@ FOOTER STYLES
 	background-repeat: repeat;
 }
 
+.img-footer{
+	float:right;
+}
+
+.footer-contenta{
+	float:left;
+}
+
+.footer-contentb{
+	float:left;
+}
+
+.footer-contentc{
+	float:left;
+}
+
+.footer-contenta ul{
+	list-style:none;
+}
+
+.footer-contentb ul{
+	list-style:none;
+}
+
+.footer-contentc ul{
+	list-style:none;
+}
+
+
 @media only screen and (max-width: 767px) {
 
 	/*****************************
