@@ -14,6 +14,10 @@ Template: base-wp
 HEADER STYLES
 ******************************/
 
+html { font-size: 62.5%; } /* font-size: 62.5% now means that 1.0 rem = 10px */
+*{font-size: 1.6rem }
+body { font-family: arial;  }
+
 #page{
 	background-color:white;
 }
