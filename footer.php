@@ -11,13 +11,13 @@
 </div><!-- #content -->
 	</div><!-- wide contenitor-->
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="widget-footer container">
-			<img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/lousa.jpg"; ?>" />
+		<div class="widget-footer container font-size-p">
+			<img class="footer-lousa" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/lousa.jpg"; ?>" />
 			<div class="footer-contenta">
 				<ul>
-					<li>HORÁRIO DE ATENDIMENTO</li>
+					<li><strong>HORÁRIO DE ATENDIMENTO</strong></li>
 					<li>SEGUNDA A SEXTA DAS 9H ÁS 17H.</li>
-					<li>(11)3241-0818</li>
+					<li><strong>(11) 3241-0818</strong></li>
 					<li>
 						<ul class="redes-sociais-header-pb ">
 							<li class="twitter"><a target="_blank" href="https://twitter.com/organicoemcasa"></a></li>
@@ -29,7 +29,7 @@
 			</div>
 			<div class="footer-contentb">
 				<ul>
-					<li>ORGÂNICOS NA PORTA</li>
+					<li><strong>ORGÂNICOS NA PORTA</strong></li>
 					<li>SOBRE O BLOG</li>
 					<li>CONHEÇA NOSSA LOJA</li>
 					<li>FALE CONOSCO</li>
@@ -37,7 +37,7 @@
 			</div>
 			<div class="footer-contentc">
 				<ul>
-					<li>BLOG</li>
+					<li><strong>BLOG</strong></li>
 					<li>NUTRIÇÃO ESPORTIVA</li>
 					<li>ALIMENTOS ORGÂNICOS</li>
 					<li>ALIMENTAÇÃO SAUDÁVEL</li>

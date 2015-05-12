@@ -56,19 +56,19 @@
 	<?php if (is_home()):?>
 		<div class="container navmenu">
 			<ul class="navmenub">
-				<li><a class="font-size-p" target="_blank" href="#"><strong>SOBRE O BLOG</strong></a></li>
+				<li><a class="font-size-p" target="_blank" href="#">SOBRE O BLOG</a></li>
 				<li class="navmenu-ponto"></li>
-				<li><a class="font-size-p" target="_blank" href="#"><strong>CONHEÇA NOSSA LOJA</strong></a></li>
+				<li><a class="font-size-p" target="_blank" href="#">CONHEÇA NOSSA LOJA</a></li>
 				<li class="navmenu-ponto"></li>
-				<li><a class="font-size-p" target="_blank" href="#"><strong>RECEBA NOVIDADES</strong></a></li>
+				<li><a class="font-size-p" target="_blank" href="#">RECEBA NOVIDADES</a></li>
 				<li class="navmenu-ponto"></li>
-				<li><a class="font-size-p" target="_blank" href="#"><strong>FALE CONOSCO</strong></a></li>
+				<li><a class="font-size-p" target="_blank" href="#">FALE CONOSCO</a></li>
 			</ul>
 			<ul class="navmenuc">
-				<li><a target="_blank" href="#"><strong>SOBRE O BLOG</strong></a></li>
-				<li><a target="_blank" href="#"><strong>CONHEÇA NOSSA LOJA</strong></a></li>
-				<li><a target="_blank" href="#"><strong>RECEBA NOVIDADES</strong></a></li>
-				<li><a target="_blank" href="#"><strong>FALE CONOSCO</strong></a></li>
+				<li><a target="_blank" href="#">SOBRE O BLOG</a></li>
+				<li><a target="_blank" href="#">CONHEÇA NOSSA LOJA</a></li>
+				<li><a target="_blank" href="#">RECEBA NOVIDADES</a></li>
+				<li><a target="_blank" href="#">FALE CONOSCO</a></li>
 			</ul>
 			<div style="clear:both"></div>
 			<div style="padding:0 10px;">
