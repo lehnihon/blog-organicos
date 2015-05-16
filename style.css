@@ -143,7 +143,17 @@ body { font-family: Arial, Helvetica, sans-serif;  }
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
+.basebreadcrumb{
+	margin-top:5px;
+	border: 0;
+	-webkit-box-shadow:0 0 0 white !important;
+	box-shadow:0 0 0 white !important;
+	-moz-box-shadow:0 0 0 white !important;
+}
 
+.page-title{
+	margin:15px;
+}
 
 /*****************************
 MENU STYLES
@@ -328,6 +338,10 @@ aside{
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
+.attachment-full{
+	margin-bottom:10px;
+}
+
 /*****************************
 FOOTER STYLES
 ******************************/	
@@ -488,6 +502,10 @@ FOOTER STYLES
 		margin:15px 10px;
 	}
 	
+	.main-navigation ul{
+		display:block !important;
+	}	
+	
 	/*****************************
 	POSTS STYLES
 	******************************/
@@ -509,6 +527,25 @@ FOOTER STYLES
 	.entry-meta-content .dia{
 		font-size:24px;
 	}
+	
+	/*****************************
+	FOOTER STYLES
+	******************************/	
+	
+	.footer-contenta{
+		float:none;
+		padding:20px;
+	}
+
+	.footer-contentb{
+		float:none;
+		padding:20px;
+	}
+
+	.footer-contentc{
+		float:none;
+		padding:20px;
+	}	
 	
 
 }
@@ -558,6 +595,10 @@ FOOTER STYLES
 		width: 100%;	
 	}
 	
+	.main-navigation ul{
+		display:block !important;
+	}	
+	
 	/*****************************
 	POSTS STYLES
 	******************************/
@@ -580,6 +621,24 @@ FOOTER STYLES
 		font-size:18px;
 	}
 	
+	/*****************************
+	FOOTER STYLES
+	******************************/	
+	
+	.footer-contenta{
+		float:none;
+		padding:20px;
+	}
+
+	.footer-contentb{
+		float:none;
+		padding:20px;
+	}
+
+	.footer-contentc{
+		float:none;
+		padding:20px;
+	}
 }
 
 
