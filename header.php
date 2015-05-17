@@ -56,19 +56,16 @@
 	<?php if (is_home()):?>
 		<div class="container navmenu">
 			<ul class="navmenub">
-				<li><a class="font-size-p" target="_blank" href="#">SOBRE O BLOG</a></li>
+				<li><a class="font-size-p" href="<?php echo site_url(); ?>/sobre">SOBRE O BLOG</a></li>
 				<li class="navmenu-ponto"></li>
-				<li><a class="font-size-p" target="_blank" href="#">CONHEÇA NOSSA LOJA</a></li>
+				<li><a class="font-size-p" href="<?php echo site_url(); ?>/..">CONHEÇA NOSSA LOJA</a></li>
 				<li class="navmenu-ponto"></li>
-				<li><a class="font-size-p" target="_blank" href="#">RECEBA NOVIDADES</a></li>
-				<li class="navmenu-ponto"></li>
-				<li><a class="font-size-p" target="_blank" href="#">FALE CONOSCO</a></li>
+				<li><a class="font-size-p" href="<?php echo site_url(); ?>/fale-conosco">FALE CONOSCO</a></li>
 			</ul>
 			<ul class="navmenuc">
-				<li><a target="_blank" href="#">SOBRE O BLOG</a></li>
-				<li><a target="_blank" href="#">CONHEÇA NOSSA LOJA</a></li>
-				<li><a target="_blank" href="#">RECEBA NOVIDADES</a></li>
-				<li><a target="_blank" href="#">FALE CONOSCO</a></li>
+				<li><a href="<?php echo site_url(); ?>/sobre">SOBRE O BLOG</a></li>
+				<li><a href="<?php echo site_url(); ?>/..">CONHEÇA NOSSA LOJA</a></li>
+				<li><a href="<?php echo site_url(); ?>/fale-conosco">FALE CONOSCO</a></li>
 			</ul>
 			<div style="clear:both"></div>
 			<div style="padding:0 10px;">

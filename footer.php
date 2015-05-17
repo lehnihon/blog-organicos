@@ -30,18 +30,18 @@
 			<div class="footer-contentb">
 				<ul>
 					<li><strong>ORGÂNICOS NA PORTA</strong></li>
-					<li>SOBRE O BLOG</li>
-					<li>CONHEÇA NOSSA LOJA</li>
-					<li>FALE CONOSCO</li>
+					<li><a href="<?php echo site_url(); ?>/sobre">SOBRE O BLOG</a></li>
+					<li><a href="<?php echo site_url(); ?>/..">CONHEÇA NOSSA LOJA</a></li>
+					<li><a href="<?php echo site_url(); ?>/fale-conosco">FALE CONOSCO</a></li>
 				<ul>			
 			</div>
 			<div class="footer-contentc">
 				<ul>
 					<li><strong>BLOG</strong></li>
-					<li>NUTRIÇÃO ESPORTIVA</li>
-					<li>ALIMENTOS ORGÂNICOS</li>
-					<li>ALIMENTAÇÃO SAUDÁVEL</li>
-					<li>DICAS E RECEITAS</li>
+					<li><a href="<?php echo site_url(); ?>/category/nutricao-esportiva/">NUTRIÇÃO ESPORTIVA</a></li>
+					<li><a href="<?php echo site_url(); ?>/category/alimentos-organicos/">ALIMENTOS ORGÂNICOS</li>
+					<li><a href="<?php echo site_url(); ?>/category/alimentacao-saudavel/">ALIMENTAÇÃO SAUDÁVEL</li>
+					<li><a href="<?php echo site_url(); ?>/category/dicas-e-receitas/">DICAS E RECEITAS</li>
 				<ul>
 			</div>
 			<div style="clear:both"></div>
