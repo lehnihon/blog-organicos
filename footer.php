@@ -12,7 +12,7 @@
 	</div><!-- wide contenitor-->
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="widget-footer container font-size-p">
-			<img class="footer-lousa" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/lousa.jpg"; ?>" />
+			<a href="<?php echo site_url(); ?>/.."><img class="footer-lousa" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/lousa.jpg"; ?>" /></a>
 			<div class="footer-contenta">
 				<ul>
 					<li><strong>HORÁRIO DE ATENDIMENTO</strong></li>
